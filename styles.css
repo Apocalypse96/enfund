@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #fafafa;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+}
+
+.navbar-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4338ca;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar-links a {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+    background: #4338ca;
+}
+
+.container {
+    display: flex;
+    margin-top: 5rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.left-menu {
+    width: 280px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.toggle-menu {
+    position: fixed;
+    left: 1.5rem;
+    top: 5.5rem;
+    padding: 0.75rem;
+    background: #4338ca;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.footer {
+    background: #1f2937;
+    color: #e5e7eb;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .left-menu, .right-panel {
+        width: 100%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-brand">
+                <span>👋</span> Welcome Back
+            </div>
+            <div class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#">Your Work</a>
+                <a href="#">Team</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <button class="toggle-menu">☰</button>
+        <aside class="left-menu">
+            <div class="menu-item"><span>🏠</span> Home</div>
+            <div class="menu-item"><span>📊</span> Your Analytics</div>
+            <div class="menu-item"><span>📋</span> Projects</div>
+            <div class="menu-item"><span>👥</span> Team</div>
+            <div class="menu-item"><span>⚙️</span> Settings</div>
+        </aside>
+
+        <main class="main-content">
+            <div class="welcome-message">
+                <h1>Good morning! Ready to start your day?</h1>
+                <p>Here's an overview of what's happening in your workspace today.</p>
+            </div>
+
+            <div class="card">
+                <h2>📈 Today's Progress</h2>
+                <p>You're making great progress! You've completed 80% of your weekly goals.</p>
+            </div>
+
+            <div class="card">
+                <h2>🎯 Upcoming Tasks</h2>
+                <p>You have 3 important tasks due today. Don't worry, you've got this!</p>
+            </div>
+
+            <div class="card">
+                <h2>💡 Quick Tips</h2>
+                <p>Did you know you can customize your workspace? Try rearranging the cards to suit your workflow.</p>
+            </div>
+        </main>
+
+        <aside class="right-panel">
+            <h3>📬 Recent Updates</h3>
+            <div class="menu-item">Team meeting in 30 mins <span class="notification-badge">New</span></div>
+            <div class="menu-item">Project deadline updated</div>
+            <div class="menu-item">3 comments on your post</div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>Made with ❤️ for making your work life easier. Have a great day!</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
